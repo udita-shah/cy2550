@@ -1,0 +1,29 @@
+# Last Modified: Sat Apr  1 18:46:32 2023
+abi <abi/3.0>,
+
+#include <tunables/global>
+        
+/home/uditashah/p2 {
+  #include <abstractions/base>
+
+  /home/uditashah/p2 mr,
+"/home/uditashah/.project2/**" mwr,
+  /tmp/* wr,
+  /var/log/syslog ar,
+  /etc/fstab ar,
+  /proc/version ar,
+  /proc/buddyinfo ar,
+  /etc/crontab ar,
+  /usr/lib/x86_64-linux-gnu/libc.so.6 mrw,
+  /usr/share/man/man5/resolv.conf.5.gz mrw,
+  /run/systemd/resolve/stub-resolv.conf mrwl,
+  /etc/resolv.conf mrw,
+  /etc/passwd r,
+  /etc/hosts ra,
+  /home/uditashah/template r,
+  /proc/stat r,
+  network tcp,
+
+}
+
+
